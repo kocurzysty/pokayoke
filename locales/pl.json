@@ -1,0 +1,22 @@
+{
+    "login": {
+      "title": "Logowanie",
+      "username": "Nazwa użytkownika",
+      "password": "Hasło",
+      "submit": "Zaloguj",
+      "register": "Zarejestruj się"
+    },
+    "register": {
+      "title": "Rejestracja",
+      "username": "Nazwa użytkownika",
+      "email": "Email",
+      "password": "Hasło",
+      "submit": "Zarejestruj"
+    },
+    "profile": {
+      "title": "Profil",
+      "logout": "Wyloguj się",
+      "delete": "Usuń konto"
+    }
+  }
+  

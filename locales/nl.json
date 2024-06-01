@@ -1,0 +1,22 @@
+{
+    "login": {
+      "title": "Inloggen",
+      "username": "Gebruikersnaam",
+      "password": "Wachtwoord",
+      "submit": "Inloggen",
+      "register": "Registreren"
+    },
+    "register": {
+      "title": "Registreren",
+      "username": "Gebruikersnaam",
+      "email": "Email",
+      "password": "Wachtwoord",
+      "submit": "Registreren"
+    },
+    "profile": {
+      "title": "Profiel",
+      "logout": "Uitloggen",
+      "delete": "Verwijder account"
+    }
+  }
+  
