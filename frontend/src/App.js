@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Login from './pages/Login';
 import Profile from './pages/Profile';
 
@@ -7,10 +7,11 @@ function App() {
   return (
     <Router>
       <div>
-        <Switch>
-          <Route path="/login" component={Login} />
-          <Route path="/profile" component={Profile} />
-        </Switch>
+        <Routes>
+        <Route path="/" element={<Navigate to="/login" />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/profile" element={<Profile />} />
+        </Routes>
       </div>
     </Router>
   );

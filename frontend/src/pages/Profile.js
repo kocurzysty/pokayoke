@@ -1,13 +1,13 @@
 import React from 'react';
 import axios from 'axios';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Profile() {
-  const history = useHistory();
+    const navigate = useNavigate();
 
   const handleLogout = () => {
     localStorage.removeItem('token');
-    history.push('/login');
+    navigate('/profile');
   };
 
   const handleDelete = async () => {
@@ -19,7 +19,7 @@ function Profile() {
         },
       });
       localStorage.removeItem('token');
-      history.push('/login');
+      navigate('/profile');
     } catch (err) {
       console.error(err);
       alert('Delete account failed');
