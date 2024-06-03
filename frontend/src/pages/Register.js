@@ -39,9 +39,10 @@ const Register = () => {
   };
 
   return (
-    <div>
+    <div class="form-container">
       <h1>Create Account</h1>
       <form onSubmit={handleSubmit}>
+        <div>
         <input 
           type="email" 
           value={email} 
@@ -49,6 +50,8 @@ const Register = () => {
           placeholder="Email" 
           required 
         />
+        </div>
+        <div>
         <input 
           type="password" 
           value={password} 
@@ -56,6 +59,8 @@ const Register = () => {
           placeholder="Password" 
           required 
         />
+        </div>
+        <div>
         <input 
           type="password" 
           value={confirmPassword} 
@@ -63,6 +68,7 @@ const Register = () => {
           placeholder="Confirm Password" 
           required 
         />
+        </div>
         {error && <p style={{ color: 'red' }}>{error}</p>}
         <button type="submit">Create Account</button>
       </form>

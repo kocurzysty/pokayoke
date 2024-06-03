@@ -20,7 +20,7 @@ function Login() {
   };
 
   return (
-    <div>
+    <div class="form-container">
       <h2>Login</h2>
       <form onSubmit={handleSubmit}>
         <div>
