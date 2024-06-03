@@ -1,44 +1,72 @@
 #root {
   background-color: #333;
-  min-height:calc(100vh - 10px);
+  min-height: calc(100vh - 10px);
   padding: 5px;
 }
+
 .form-container {
   box-shadow: -2px 2px 5px #666;
   background-color: #555;
   width: 500px;
-  height: 250px;
+  height: 275px;
   margin: calc(50vh - 175px) auto;
   padding: 30px 50px;
   border-radius: 5px;
   color: white;
 }
 
-.form-container h2 {
+.form-container h1 {
   text-align: center;
 }
+
 .form-container form {
   font-size: 16px;
 }
-.form-container form > div {
+
+.form-container form>div {
   display: flex;
   margin-top: 15px;
+  position: relative;
 }
 
-.form-container form > div label{
-  flex:1;
+.form-container form>div label {
+  color: #555;
+  flex: 1;
+  display: flex;
 }
-.form-container form > div input{
+
+.form-container form>div input {
   border-radius: 5px;
+  flex: 1;
   border: 2px solid #666;
-  flex:3;
-  padding: 7px 12px;
+  padding: 10px 12px;
+  font-size: 12px;
 }
-.form-container form > div input:focus{
-  border-color:#000;
+
+.form-container form>div input+span {
+  position: absolute;
+  left: 15px;
+  top: 3px;
+  font-size: 8px;
+  transition: 250ms;
+}
+
+.form-container form>div input[value=""]+span {
+  font-size: 16px;
+  top: 7px;
+}
+
+.form-container form>div input:focus+span {
+  top: 3px;
+  font-size: 8px;
+}
+
+.form-container form>div input:focus {
+  border-color: #000;
   outline: none;
 }
-.form-container form > button{
+
+.form-container form>button {
   color: white;
   text-transform: uppercase;
   background-color: transparent;
@@ -48,11 +76,13 @@
   display: block;
   margin: 20px auto;
 }
-.form-container form > button:hover{
+
+.form-container form>button:hover {
   color: #555;
   background-color: #fff;
 }
-.form-container form > button:focus{
+
+.form-container form>button:focus {
   color: #fff;
   background-color: #444;
   border-color: #444;
