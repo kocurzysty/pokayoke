@@ -8,8 +8,8 @@
   box-shadow: -2px 2px 5px #666;
   background-color: #555;
   width: 500px;
-  height: 275px;
-  margin: calc(50vh - 175px) auto;
+  min-height: 350px;
+  margin: calc(50vh - 225px) auto;
   padding: 30px 50px;
   border-radius: 5px;
   color: white;
@@ -87,4 +87,14 @@
   background-color: #444;
   border-color: #444;
   outline: none;
+}
+.form-container form + a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+.form-container form + a:hover {
+  color: white;
+  font-size: 14px;
+  text-decoration: underline;
 }
