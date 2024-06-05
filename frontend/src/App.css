@@ -88,12 +88,14 @@
   border-color: #444;
   outline: none;
 }
-.form-container form + a {
+
+.form-container form+a {
   color: white;
   font-size: 14px;
   text-decoration: none;
 }
-.form-container form + a:hover {
+
+.form-container form+a:hover {
   color: white;
   font-size: 14px;
   text-decoration: underline;
